@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js" integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" crossorigin="anonymous"></script>
+    
+    <style>
+        .red {
+            background-color: red;
+            color: white;
+        }
+        .gray{
+            background-color: gray;
+        }
+
+    </style>
+</head>
+<body>
+    <center><h1>Code with Bala</h1></center>
+    <center>
+        <div><button  class="red">SUBSCRIBE</button></div>
+    </center>
+
+    <script>
+        $(document).ready(function () {
+            $( "button" ).on( "click", function() {
+                $("button").removeClass();
+                $("button").addClass("gray");
+                $("h1").text("You Have Subscribed Code With Bala");
+                $("button").text("SUBSCRIBED");
+            } );
+                
+        });
+    </script>
+</body>
+</html>
